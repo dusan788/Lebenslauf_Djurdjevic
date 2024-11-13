@@ -1,0 +1,129 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+} 
+
+
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+      display: none;
+    }
+    #hamburger-nav {
+      display: flex;
+    }
+    #Ausbildung, .Ausbildung-details-container {
+      margin-top: 2rem;
+    }
+    #profile, 
+    .section-container{
+      display: block;
+    }
+    .arrow {
+      display: none;
+    }
+    section,
+    .section-container{
+      height: fit-content;
+    }
+    section {
+      margin: 0 5%;
+    }
+    .section__pic-container {
+      width: 275px;
+      height: 275px;
+      margin: 0 auto 2rem;
+    }
+    .about-containers {
+      margin-top: 0;
+     }
+} 
+
+@media screen and (max-width: 830px) {
+  #Kontakt, 
+  footer {
+    height: 40vh;
+  }
+  #profile{
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  .about-containers, .contact-info-upper-container, .btn-container
+  {
+    flex-wrap: wrap;
+  }
+  .contact-info-container{
+    margin: 0;
+  }
+  .contact-info-container p, .nav-links li a{
+    font-size: 1rem;
+  }
+  .ausbildung-sub-title {
+    font-size: 2rem;
+  }
+  .berufspraxis-sub-title {
+    font-size: 1.6rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links{
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container{
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container{
+    text-align: justify;
+  }
+  .interessen-details-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+  }
+  .interessen-article-container {
+      
+    height: 100px;
+    width: 300px;
+    margin: 0 auto;           /* Zentriert die Container */
+    display: flex;
+    justify-content: center;  /* Zentriert Inhalt innerhalb des Containers */
+    align-items: center;      /* Vertikale Zentrierung */
+   
+  }
+
+  .interessen-sub-title {
+    font-size: 1.6rem;         /* Verkleinert die Schriftgröße */
+    font-weight: bold;
+    text-align: center;       /* Zentriert die Überschrift */
+    width: 100%;               /* Nimmt die gesamte Breite ein */
+    margin-bottom: 1rem;       /* Gibt Abstand unter der Überschrift */
+  }
+}

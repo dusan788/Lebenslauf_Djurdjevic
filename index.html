@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebenslauf</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Dusan Djurdjevic</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#About">Über mich</a></li>
+                <li><a href="#Ausbildung">Ausbildung</a></li>
+                <li><a href="#Berufspraxis">Berufspraxis</a></li>
+                <li><a href="#Kenntnisse">Kenntnisse</a></li> 
+                <li><a href="#Interessen">Interessen</a></li>
+                <li><a href="#Kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Dusan Djurdjevic</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span> 
+                    <span></span> 
+                    <span></span> 
+                </div>
+            <div class="menu-links">
+                <li><a href="#About"  onclick="toggleMenu()">Über mich</a></li>
+                <li><a href="#Ausbildung" onclick="toggleMenu()">Ausbildung</a></li>
+                <li><a href="#Berufspraxis"  onclick="toggleMenu()">Berufspraxis</a></li>
+                <li><a href="#Kenntnisse"  onclick="toggleMenu()">Kenntnisse</a></li>
+                <li><a href="#Interessen"  onclick="toggleMenu()">Interessen</a></li>
+                <li><a href="#Kontakt"  onclick="toggleMenu()">Kontakt</a></li>
+            </div> 
+        </div>    
+    </nav> 
+    	<section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic3.png" alt="Dusan Djurdjevic profile picture">
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hallo, ich bin</p>
+                <h1 class="title">Dusan Djurdjevic</h1>
+                <p class="section__text__p2">Software Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" 
+                        onclick="window.open('./assets/Lebenslauf_Djurdjevic_November-2024.pdf')">
+                        Download Lebenslauf</button>
+
+                    <button class="btn btn-color-1" 
+                        onclick="location.href= './#Kontakt' ">
+                        Kontakt</button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="Mein Linkedin Profil" 
+                    class="icon" onclick="location.href='https://www.linkedin.com/in/dušan-djurdjević-96968728a' ">
+                
+                    <img src="./assets/xing-2175.png" alt="Mein Xing Profil" 
+                    class="icon" onclick="location.href='https://www.xing.com/profile/Dusan_Djurdjevic3' ">
+                </div>
+            </div>
+        </section>
+        <section id="About">
+            <p class="section__text__p1">Erfahren Sie mehr</p>
+            <h1 class="title">über mich</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img 
+                        src="./assets/profilfoto.png" 
+                        alt="Profile picture"
+                        class="about-pic"
+                        />
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img 
+                                src="./assets/experience.png" 
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <h3>Erfahrung</h3>
+                            <p>3+ Jahre <br />Java Entwicklung </p>
+                            <p>1+ Jahre <br />C# Entwicklung</p>
+                        </div>
+                        <div class="details-container">
+                            <img 
+                                src="./assets/education.png" 
+                                alt="Education icon"
+                                class="icon"
+                            />
+                            <h3>Abschluss</h3>
+                            <p> HTL Spengergasse Fachrichtung Informatik <br /> Abschluss mit Reife- und Diplomprüfung</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>Im Februar 2024 habe ich meine Ausbildung im Bereich Informatik an der HTL-Spengergasse erfolgreich abgeschlossen. 
+                            Besonders fasziniert mich die Welt des Programmierens, in der ich bereits praktische Erfahrungen im Java- und C#-Umfeld sammeln konnte. 
+                            Im Rahmen meiner Schulprojekte konnte ich erste Erfahrungen in Java sammeln. 
+                            Das Arbeiten mit Eclipse und IntelliJ ist mir vertraut, und ich habe an Projekten mit Spring Boot und Maven gearbeitet. 
+                            Auch Hibernate OR-Mapping wurde in meiner Ausbildung behandelt und angewendet, was mir ein solides Fundament für die Entwicklung moderner Softwarelösungen verschafft hat. 
+                            Ebenso habe ich mit C#, .NET Core und MVC gearbeitet und Projekte für die Abgabe erfolgreich umgesetzt. 
+                            Dabei habe ich Visual Studio als Entwicklungsumgebung genutzt und Projekte mit Datenbankanbindungen wie MS SQL und SQLite umgesetzt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+           <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" 
+           onclick="location.href='./#Ausbildung'"/> 
+        </section>
+        <section id="Ausbildung">
+            <p class="section__text__p1"> Meine </p>
+            <h1 class="title">Ausbildung</h1>
+            <div class="Ausbildung-details-container">
+                <div class="ausbildung-containers">
+                    <div class="details-container">
+                        <h2 class="ausbildung-sub-title">Schulausbildung</h2>
+                        <div class="article-container">
+                            <article>
+                                <img 
+                                src="./assets/education.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                                />
+                                <div class="ausbildung-item">
+                                    <h3>HTL-Spengergasse Fachrichtung Informatik </h3>
+                                    <p class="school-year">09/2016 - 02/2024</p>
+                                    <p>Abschluss mit Reife- und Diplomprüfung</p>
+                                </div>
+                            </article>                
+                            <article>
+                                <img 
+                                src="./assets/education.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                                />
+                                <div class="ausbildung-item">
+                                    <h3>Berufsschule für Bürokaufleute</h3>
+                                    <p class="school-year">09/2010 - 02/2013</p>
+                                    <p>Lehrabschluss</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                        <div class="details-container">
+                            <h2 class="ausbildung-sub-title">Pflichtschule</h2>
+                            <div class="article-container">
+                                <article>
+                                    <img 
+                                    src="./assets/education.png" 
+                                    alt="Experience icon" 
+                                    class="icon"
+                                    />
+                                    <div class="ausbildung-item">
+                                        <h3>Fachmittelschule für Handel und Büro</h3>
+                                        <p class="school-year">09/2010 - 02/2013</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img 
+                                    src="./assets/education.png" 
+                                    alt="Experience icon" 
+                                    class="icon"
+                                    />
+                                    <div class="ausbildung-item">
+                                        <h3>Europäische Mittelschule</h3>
+                                        <p class="school-year">09/2004 - 06/2008</p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <img 
+                                    src="./assets/education.png" 
+                                    alt="Experience icon" 
+                                    class="icon"
+                                    />
+                                    <div class="ausbildung-item">
+                                        <h3>Volksschule und Mittelschule in Serbien</h3>
+                                        <p class="school-year">09/1999 - 05/2004</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" 
+            onclick="location.href='./#Berufspraxis'"/> 
+        </section>
+        <section id="Berufspraxis">
+            <p class="section__text__p1"> Meine </p>
+            <h1 class="title">Berufspraxis</h1>
+            <div class="Berufspraxis-details-container">
+                <div class="ausbildung-containers">
+                    <div class="details-container">
+                        <h2 class="berufspraxis-sub-title">Berufserfahrung</h2>
+                        <div class="article-container">
+                            <article>
+                                <img 
+                                src="./assets/handshake.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                                />
+                                <div class="berufspraxis-item">
+                                    <h3>Verpackung und Logistik, Craftjobs, 1210 Wien</h3>
+                                    <p class="berufspraxis-year">Beschäftigt von 2017-2018</p>
+                                    <p>Aufgabenbereich: Kommissionierung, Bestellungsbearbeitung, 
+                                        Rechnungskontrolle, 
+                                        Ent- und Verpackung von Artikeln, Inventur</p>
+                                </div>
+                            </article>                
+                            <article>
+                                <img 
+                                src="./assets/handshake.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                                />
+                                <div class="berufspraxis-item">
+                                    <h3>Finanzberater, Investcon GmbH, 1010 Wien</h3>
+                                    <p class="berufspraxis-year">Beschäftigt von 2013-2014</p>
+                                    <p>Ausbildung im Versicherungs- und Wertpapierbereich
+                                        Aufgabenbereich: Beratungen, Kund:innenbesuche, und -Akquise, Recherchetätigkeiten, Datenpflege, Angebotsstellung
+                                        </p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/handshake.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                                />
+                                <div class="berufspraxis-item">
+                                    <h3>Bürokaufmann, Weidinger & Partner GmbH, 1020 Wien</h3>
+                                    <p class="berufspraxis-year">Beschäftigt von 2010-2013</p>
+                                    <p>Erfolgreiche Absolvierung der Lehrabschlussprüfung</p>
+                                    <p>Aufgabenbereich: Datenverwaltung, Dokumentation, Auftragsbearbeitung, Kundenbetreuung und Kommunikation</p>
+                                </div>
+                            </article>
+                        </div>
+                 </div>
+                    <div class="details-container">
+                        <h2 class="berufspraxis-sub-title">Praktikumserfahrung <span style="font-size: 12px;"> (Im Rahmen der Lehrausbildung) </span> </h2> 
+                        <div class="article-container">
+                            <article>
+                                <img 
+                                src="./assets/handshake.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                                />
+                                <div class="berufspraxis-item">
+                                    <h3>Bürokaufmann, Lebenswelt Heim, 1130 Wien</h3>
+                                    <p class="berufspraxis-year">Beschäftigt 2012</p>
+                                    <p>Aufgabenbereich: Postbearbeitung, Organisation 
+                                        Schriftverkehr, 
+                                        Aktualisierung der Excel-Datenbanken, 
+                                        Recherchetätigkeiten
+                                    </p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/handshake.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                                />
+                                <div class="berufspraxis-item">
+                                    <h3>Bürokaufmann,
+                                        Techtime GmbH, 1020 Wien</h3>
+                                    <p class="berufspraxis-year">Beschäftigt 2011 (4 Monate)</p>
+                                    <p>Aufgabenbereich: Postbearbeitung, Recherchetätigkeiten, Excel-Listen Bearbeitung, Bestellung </p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/handshake.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                                />
+                                <div class="berufspraxis-item">
+                                    <h3>Wiener Städtische Versicherung AG, 1020 Wien</h3>
+                                    <p class="berufspraxis-year">Beschäftigt 2011 (2 Monate)</p>
+                                    <p>Aufgabenbereich: Postbearbeitung, Ablage und Archivierung, Datenpflege, Archivverwaltung</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" 
+         onclick="location.href='./#Kenntnisse'"/> 
+        </section>
+        <section id="Kenntnisse">
+                <p class="section__text__p1"> Einblick in meine  </p>
+                <h1 class="title">Kenntnisse</h1>
+            <div class="about-section">
+                <div class="about-skills">
+                    <div class="about-skill"><p>Java</p> <hr style="width: 50%;" /></div>
+                    <div class="about-skill"><p>C# ASP.NET</p> <hr style="width: 25%;" /></div>
+                    <div class="about-skill"><p>SQL</p> <hr style="width: 35%;" /></div>
+                    <div class="about-skill"><p>PL/SQL</p> <hr style="width: 15%;" /></div>
+                    <div class="about-skill"><p>Git</p> <hr style="width: 15%;" /></div>
+                    <div class="about-skill"><p>JavaFX</p> <hr style="width: 10%;" /></div>
+                    <div class="about-skill"><p>HTML</p> <hr style="width: 20%;" /></div>
+                    <div class="about-skill"><p>CSS</p> <hr style="width: 15%;" /></div>
+                </div>    
+            </div> 
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" 
+            onclick="location.href='./#Interessen'"/> 
+        </section>
+        <section id="Interessen">
+            <p class="section__text__p1"> Meine  </p>
+                <h1 class="title">Interessen</h1>
+            <div class="interessen-details-container">
+                <div class="interessen-article-container">
+                    <article>
+                        <h3>Programmierung</h3>
+                    </article>
+                </div>
+                <div class="interessen-article-container">
+                    <article>
+                        <h3>Technik im Allgemeinen</h3>
+                    </article>
+                </div>
+                <div class="interessen-article-container">
+                    <article>
+                        <h3>Kaffee</h3>
+                        <p>(Hobby-Barista)</p>
+                    </article>
+                </div>
+                <div class="interessen-article-container">
+                    <article>
+                        <h3>Fitness</h3>
+                    </article>
+                </div>
+                <div class="interessen-article-container">
+                    <article>
+                        <h3>Musik</h3>
+                    </article>
+                </div>
+                <div class="interessen-article-container">
+                    <article>
+                        <h3>Fotografie</h3>
+                    </article>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" 
+            onclick="location.href='./#Kontakt'"/> 
+        </section>
+        <section id="Kontakt">
+            <h1 class="title">Kontakt</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" 
+                    alt="Email icon"
+                    class="icon contact-icon email-icon"
+                    />
+                    <p><a href="mailto:djurdjevicdusan@hotmail.com">&nbsp;djurdjevicdusan@hotmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png" 
+                    alt="Linkedin icon"
+                    class="icon contact-icon"
+                    />
+                    <p><a href="https://www.linkedin.com/in/dušan-djurdjević-96968728a">&nbsp;&nbsp;LinkedIn</a></p>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" 
+            onclick="location.href='./#Kontakt'"/> 
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#About">Über mich</a></li>
+                        <li><a href="#Ausbildung">Ausbildung</a></li>
+                        <li><a href="#Berufspraxis">Berufspraxis</a></li>
+                        <li><a href="#Kenntnisse">Kenntnisse</a></li> 
+                        <li><a href="#Interessen">Interessen</a></li>
+                        <li><a href="#Kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2024 Dusan Djurdjevic. Alle Rechte vorbehalten.</p>
+        </footer>
+    <script src="script.js"></script>
+  </body>
+</html> 
