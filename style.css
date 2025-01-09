@@ -422,6 +422,8 @@ article:hover {
     justify-content: center; /* Zentriert den gesamten Inhalt des "Ausbildung"-Abschnitts */
     flex-direction: column;
     align-items: center; /* Horizontale Zentrierung */
+    
+   
 }
 
 .berufspraxis-sub-title {
